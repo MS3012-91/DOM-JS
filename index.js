@@ -7,6 +7,7 @@ el.forEach ((e) =>  {
 )
 
 function makeActive () {
+    this.classList.remove ('passive')
     this.classList.add ('active');
     let x= getComputedStyle(this);
     let y =x.getPropertyValue('background-color')
@@ -17,6 +18,7 @@ function makeActive () {
 
 function makePassive () {
     this.classList.remove ('active')
+    this.classList.add ('passive');
     document.body.style.backgroundColor = 'white';
     this.removeEventListener ('click', makePassive)
     this.addEventListener ('click', makeActive)

@@ -38,3 +38,8 @@
     transform: scale(2);
     transition: transform 0.5s;
 }
+
+.passive {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
