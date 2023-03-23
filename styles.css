@@ -1,0 +1,40 @@
+.container {
+    height: 80px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    transform: scale(100%);
+    transition: 1s;
+}
+
+.element {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.element1 {
+    background-color: cadetblue;
+}
+
+.element2 {
+    background-color:coral;
+}
+.element3 {
+    background-color: darkmagenta;
+}
+
+.element4 {
+    background-color: darkturquoise;
+}
+
+.element5 {
+    background-color: forestgreen;
+}
+
+.active {
+    transform: scale(2);
+    transition: transform 0.5s;
+}
