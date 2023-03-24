@@ -1,45 +1,63 @@
-.container {
-    height: 80px;
-    width: 500px;
+.mainContainer {
+    height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+}
+
+.colorsContainer {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    background-color: black;
-    transform: scale(100%);
-    transition: 1s;
+    background-color: gray;
+    /* linear-gradient(310deg, rgba(2,0,36,0.8828781512605042) 0%, rgba(33,97,11,0.6811974789915967) 56%, rgba(72,93,20,1) 100%); */
 }
 
-.element {
-    height: 50px;
+.backgroundsContainer {
+    width: 65%;
+    height: 100%;
+    background-image: url('images/sever-gory-more-nebo-noch-severnoe-siianie.jpg');
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    background-size: cover;
+}
+
+
+button {
+    height: 30px;
     width: 50px;
-    border-radius: 50%;
 }
 
-.element1 {
-    background-color: cadetblue;
+.btn1 {
+    margin-top: -30px;
 }
 
-.element2 {
-    background-color:coral;
-}
-.element3 {
-    background-color: darkmagenta;
+.btn2 {
+    margin-top: 30px;
 }
 
-.element4 {
-    background-color: darkturquoise;
+.toUp {
+    transition-duration: 2s;
 }
 
-.element5 {
-    background-color: forestgreen;
+.text {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
-.active {
-    transform: scale(2);
-    transition: transform 0.5s;
+
+h2 {
+    color: antiquewhite;
+    font-size: 24px;
 }
 
-.passive {
-    transform: scale(1);
-    transition: transform 0.5s;
+p {
+    color: aliceblue;
+    font-size: 12px;
 }
